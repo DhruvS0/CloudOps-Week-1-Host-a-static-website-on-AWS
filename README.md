@@ -1,5 +1,8 @@
 # CloudOps-Week-1-Host-a-static-website-on-AWS
 ### Host a static website on AWS  and implement CICD using the S3, CloudFront, Route53
+
+![Architecture](https://github.com/DhruvS0/CloudOps-Week-1-Host-a-static-website-on-AWS/assets/113872537/d095b016-7d5c-40dd-8300-67179c70219f)
+
 To host a website on AWS for free, you can take advantage of the AWS Free Tier, which offers limited free usage for certain AWS services. Here's how you can host a website on AWS using free services:
 
 #### Create an AWS Account:
@@ -39,6 +42,9 @@ Point the record set to your CloudFront distribution, so your website is accessi
 ![image](https://github.com/DhruvS0/CloudOps-Week-1-Host-a-static-website-on-AWS/assets/113872537/e7803e96-c1b8-49a9-84a7-dd032fa3f249)
 
 By following these steps, you can host a static website on AWS using the free services within the AWS Free Tier limits. Keep in mind that the Free Tier has usage limits, and if your website exceeds those limits, you may incur charges. Make sure to review the AWS Free Tier documentation to understand the specific usage limits and durations associated with the free services.
+
+#### Create a Pipeline to automate the changes in github file.
+![image](https://github.com/DhruvS0/CloudOps-Week-1-Host-a-static-website-on-AWS/assets/113872537/432d48c9-b328-4dde-990f-2b3ce77274b8)
 
 #### Website Hosted
 ![Final-webpage-hosted](https://github.com/DhruvS0/CloudOps-Week-1-Host-a-static-website-on-AWS/assets/113872537/47a1fe0d-d048-4d15-9fc6-ce9ef67bc42d)
