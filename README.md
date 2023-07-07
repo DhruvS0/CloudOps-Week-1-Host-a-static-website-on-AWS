@@ -19,16 +19,27 @@ AWS Route 53: Configure DNS for your domain or subdomain.
 
 Follow the steps mentioned in the previous response to create an S3 bucket and configure it for website hosting.
 Upload your website files to the S3 bucket.
-Make sure to set the appropriate permissions for public access.
+Make sure to set the appropriate permissions for public access. i.e., Turn off the block public access and write a public policy as shown below.
+![Bucket Policy](https://github.com/DhruvS0/CloudOps-Week-1-Host-a-static-website-on-AWS/assets/113872537/86b45c36-fa12-4457-9d51-c51e92625a86)
 
 #### Set Up Amazon CloudFront:
 
 Create a CloudFront distribution for your website to improve its performance.
 Follow the steps mentioned in the previous response to configure CloudFront with your S3 bucket as the origin.
+While we create CloudFront distribution, we need to generate certificates for our domain name.
+![image](https://github.com/DhruvS0/CloudOps-Week-1-Host-a-static-website-on-AWS/assets/113872537/542c94b2-44de-42c8-a6be-e7eaae141b1a)
 Enable the option to redirect HTTP to HTTPS for better security.
+![CloudFront-Distribution](https://github.com/DhruvS0/CloudOps-Week-1-Host-a-static-website-on-AWS/assets/113872537/c72b6c0e-41ac-494a-8125-4bccf6678702)
+
 
 #### Configure AWS Route 53:
 
 Follow the steps mentioned in the previous response to set up Route 53 and create a record set.
 Point the record set to your CloudFront distribution, so your website is accessible through your domain or subdomain.
+![image](https://github.com/DhruvS0/CloudOps-Week-1-Host-a-static-website-on-AWS/assets/113872537/e7803e96-c1b8-49a9-84a7-dd032fa3f249)
+
 By following these steps, you can host a static website on AWS using the free services within the AWS Free Tier limits. Keep in mind that the Free Tier has usage limits, and if your website exceeds those limits, you may incur charges. Make sure to review the AWS Free Tier documentation to understand the specific usage limits and durations associated with the free services.
+
+#### Website Hosted
+![Final-webpage-hosted](https://github.com/DhruvS0/CloudOps-Week-1-Host-a-static-website-on-AWS/assets/113872537/47a1fe0d-d048-4d15-9fc6-ce9ef67bc42d)
+
